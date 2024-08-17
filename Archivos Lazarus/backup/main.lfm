@@ -1,0 +1,531 @@
+object MyApp: TMyApp
+  Left = 450
+  Height = 338
+  Top = 245
+  Width = 891
+  Caption = 'Data Logger by Pablo Antivil'
+  ClientHeight = 338
+  ClientWidth = 891
+  DesignTimePPI = 144
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  LCLVersion = '2.2.6.0'
+  object GroupBox1: TGroupBox
+    Left = 8
+    Height = 296
+    Top = 8
+    Width = 872
+    Caption = '[ Sensores OnLine ]'
+    ClientHeight = 272
+    ClientWidth = 868
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -14
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 0
+    object DataAmb: TLabel
+      Left = 640
+      Height = 21
+      Top = 48
+      Width = 118
+      Caption = 'Histograma MP'
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -16
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+    object Histo: TLabel
+      Left = 216
+      Height = 21
+      Top = 48
+      Width = 144
+      Caption = 'Datos Ambientales'
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -16
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+    object Image1: TImage
+      Left = 176
+      Height = 32
+      Top = 5
+      Width = 232
+      Picture.Data = {
+        1754506F727461626C654E6574776F726B47726170686963FA07000089504E47
+        0D0A1A0A0000000D49484452000000E90000001E0806000000C9A03942000000
+        017352474200AECE1CE90000000467414D410000B18F0BFC6105000000097048
+        597300000EC400000EC401952B0E1B0000078F49444154785EED9B3D6CEB5414
+        C74F10627A0362438205C51D9E3A23702636922E1D1E5D9F589C31598AF8E8F8
+        F8106F49C678415DCB13EAD2988D290631571DEA880509265007268414CEB9DF
+        B6AF3F62A769DA777FD2556DE7FADCCF73CE3F76DA5921E070387616E6A47FBF
+        ED895387C3B14BBCF17BA29D944E1C0EC7EE20FDB2D4495FBC78218ED6E7C993
+        27E2C8E178F8DC86AF589DF4B3E81ABEF9E9375105E0FB77FF1147EBF3D1AF8F
+        C411C0A71FBC035FF7F7C499C371FFD986AF48BF7C859D09CC46D7851A92250B
+        D9A541391C0F856DFA4ACA496F93368372385E26B2BEB2352775381CCDB86327
+        8D60D8E940A7A8F47A308D96A2EE06584EA1A7EC0FB1F50CEA73F999EEDF3057
+        79832C97100D7B1B6D63194D6188F3A7E7B307BDE11436399DB7CD723A34D6AB
+        83FD8F20DBFD6564D6A139CC0FB0DA0E9FFF2A3B77C56E67D23886F1C0DBD8E6
+        5D5E9C412C8E014238BF4DC7ABCD12A64F3D1884BA676DA10DE70DC610E2FC69
+        6288C3310C3C0C7CF7C051A36107BC7168AC178E201C80676E0674506F60D689
+        21CCEC973A76A2219FFF323B77C9C69C949E6EC9D28460BE82D5CA2C094C7CFE
+        59B8116F5AC2C5192D830F41C00D6FC6EE8E811B973B3C8E739EA8F94CE613BC
+        4260E07B3ACD65A4DD2282F3901FF9133E86641EF00BE133116430B83DE39554
+        1DB161C267727C75EC609D4B7E9F9C2F55E596F6C7BABEB2C399B40B0747C24B
+        2FAF71D28BA527454B2663CA52C4F202B88F1EC1F1F111DFB0E1395AADC935B6
+        DFD372A837B548AF94AC42C994EA8FEC3F6632558F2496076311C2C3015D3364
+        38CA6FDD2696DEB042FE9B1BF71466FD2E3B26BAFD119CE226F68309CC4F4738
+        BB122EF5541B584816EB566CFDC63ECA0A6BF7B106CB6BE07E13C0C988F7B4DB
+        3FC43322862B7AA52FD71357F2E840D43910EB1A5F017BEB5FC70EF461B65830
+        E7E4F3D5B2EFB740A9939A8F8AD72DAD594622F3915F1DE0A6EAC3B18C94A908
+        27A3A55E2C1B4AEAEEEF41B77B00DCFFEB4BDE703C40F9284ED0528CE769C994
+        95552899C69E2570602693F5FC7DD8E743CA8319B1E3916415E7441C0AF95FB0
+        912C1BD7A43B5AC0623602C377B199BCD426599C92950CB3DF8FC1231B4DFA58
+        87EE08160B5200335C7501391C3BF0E171EA57ACFBB027C7D3DDC333E212AEA9
+        F9B5EC20EC9904CD077E8AC12C99A9BB2AB1F940DD52C5CE64529E458CE20D78
+        86F127702AA3A08C9466068CCED1D510CC90C53E2AA52EC6D4439A789DA56B4B
+        1AECC73CE1327CAE74B8904CB8B83C8105A20E9684CBCB78FC5CF75512CC2121
+        E9753AC328AE653D97FCB4A1307BD14EE117595DB3DD7060B199C2D8B8A5C800
+        A7FB9D4C94D62BE93765E2B67D5C07FADE3EE601223801B61D922B7E6E4566C9
+        2C163B05C4975770D122CE6C92DD7E7044C467F05CAEB6250346E24B4770624A
+        B80C2AC304C07C14B13A7C09649F6720CCE9A393B464521B26848127838CD80C
+        966C4D81824C758B3AACA23D3A0F46735ECD6C77530FBD50EA31E73AC631A06C
+        A5074E982D8B48F57B6B7D44C7EAC9AF04BCAD66D4B0439997052ADC19A4083C
+        CB1B80BB00A3E7EAAFB7BAF46705C7912A3737371B29A6CD3CF3152E28FDABDC
+        0AB34886648551997D86938A35C555798DDD20EFD79FDB50F71414D5763259E1
+        F2E035694FDAF757134C159A6485EBA8EEAD67BF9E2DC63C10F766C7A5EBFA69
+        231CD5FF6C1B45E01C07457DAF9883D67D14C59FE01D45685BB9F6736B4554CF
+        71BDB929B2A331F7B56DDF3729A64D42FA6561267DF4C70F1B29CD31A3B2F88E
+        81A432A094BAC1A1FECE91434BDD22AA256F563E25706533899218D794C946B3
+        AC1DFCBDC77C8C3974BBFB363DAB94460C6736AD46EF147BF4D0477C163DD74F
+        822728599304D0F9F867F4BD931FD969DAC7DA64325FB22890A77A6FE8EC6ECA
+        FD0A3B6C4EE8C159F3AC69DBF74D4A21B88976349352B094D13A1DD1701F89EB
+        E5D18E51965DB2D9A030938A6BE27E9D39B3F7D13878A5249769AAA3BCCE3C46
+        BB3831C2A2555964D17DF3555F88646E643091BD545D5FDAC3BEC8B95519AEA8
+        DFCDFB5807BDC645EB9B9F373D1E9D9D2BED186B97B3533206735FDBF67D9362
+        DA24945FA64E8C4A36234D8A69338FE9042525EBC1CA01B094CA25FBC26974FB
+        AC895227B514A35FE9C0A14BDEF1F29BC51A74CC31664A763AB2144B582A46FB
+        256D540717A4451F4B311CC75694ED82F6D5E735ED68A74C17AB5C1798FBDAB6
+        EF9B14D326710FE42EE1A36FA10CCBEA45F5AE0B6BB0D7334568A96BAFD78743
+        61A84AF2921C14BF814078BF5646BFFA33FE6453556112328145D9234441FF78
+        62D846A9467FFA33F603047D1DF10398CC934AF9DC9F2DF2F7529FE91DA929F7
+        A80D4C9D7A582407719CECC4909145B4E86319E95F8695C0DA37FA4F736EB45D
+        D70EBD9A4ACD83B05367ED08DBBE6F528A48FD3F69E7931FC565809B2FDE1747
+        ED78FDCB9FC51186A66F3F14472DA1F759ECE9A90F93C2EF2A0EC7EDB10D5FB1
+        FE3FE9CEC35E361BAF372ADE75391C0F81C24CFADFC77F8AA376BCFADD9B2CD2
+        5094689D49550645489A2D8C5F92381C5B641BBEA2FCF25ECA5D87E38E797072
+        B7E97FC6381C2F1B365F29CCA4FFBEF795386AC76BBF7C2E8E5C26753C1CB6E1
+        2B5BCDA40E87A339A94CEA70387607A570A5933A1C8EDD4339A93877381C3B07
+        C0FF2AF910D5CC39C20A0000000049454E44AE426082
+      }
+    end
+    object Image2: TImage
+      Left = 16
+      Height = 23
+      Top = 14
+      Width = 24
+      Picture.Data = {
+        1754506F727461626C654E6574776F726B477261706869638A01000089504E47
+        0D0A1A0A0000000D4948445200000017000000170806000000E02AD4A0000000
+        017352474200AECE1CE90000000467414D410000B18F0BFC6105000000097048
+        597300000EC200000EC20115284A800000011F49444154484BB594D10D823010
+        868B7100E206CE0083F88613C0060CC1A36FF06E226F0E0233B8021B68FFE38A
+        627B16A97EC9A52791AF477ABD681886BBFA134E79DBB69C7D4796659C8D5872
+        889324E15FCBE9FB5E1545A1B48F9F68203751D7F57D0D780FA175930BB11DB7
+        98D3340D679FC9F39C2A9670CA013EF113BA52CE6436BC0AD0970AE1C723D79A
+        651E275E79085E791471B282BF562E76CBD80DCB5AF295B22C555555943BE5E8
+        DFB5A028DC138C82D9F50FBDFAA6F7CD8CB1E4BECB2361C4282E4D539A31963C
+        048867030C7284DE99C7D07AE040E87D9E830B15FB869041FA8FEBACAC6ED91F
+        8EB4DEAE175ADF91CEA4EB3ACE9E589768773A534840E20A1774A0A107F9CA74
+        989AA95BE238A607A1183198B5E26F51EA01AFB637BD5AE3DCCB000000004945
+        4E44AE426082
+      }
+    end
+    object Image3: TImage
+      Left = 8
+      Height = 176
+      Top = 64
+      Width = 72
+      Picture.Data = {
+        1754506F727461626C654E6574776F726B47726170686963E203000089504E47
+        0D0A1A0A0000000D4948445200000043000000B00802000000DBAE4493000000
+        017352474200AECE1CE90000000467414D410000B18F0BFC6105000000097048
+        597300000EC300000EC301C76FA8640000037749444154785EED9CCB61E3300C
+        4453970B723DAEC6CDA8982C250C014A241D5B71962379DE0520C40F1ED749F6
+        627D7D9F85D3997C1D192820E4F1E1F80093941C056F1809824C06E20D234190
+        C940BC6124082736B9DEADD0E77EC5D44158179120C86420D645240895C99ACB
+        6D5A1EB7BBBF5CEFF638314DF7EB05F544BE9054BCDE26CCC294CB2D2F9BEEB7
+        CE9A7B5E931705568E0461BF49EB1F2F9DFAE0E982779889ADFB1F87A914B652
+        24087B4D8AFB5BC679623E33BAB24ABA658CF39ABC22DAACA614AB8A06AC1009
+        C24E139C50DED57A6A6E21665495AD7C9894A7E562D46C1C09C23E13BFCF06D6
+        58DD4055E99AAC0EAB66BDD7C46FAFC19B4DEAAA0D2341D867D22917BCCDA49A
+        F55E93CEF515FCC664B56BBD918D2341D869E207E4DFF6FE5B067DD50D5495BE
+        C93C69BD6BD980152241D86BB23A3778F04979C964C3EA782B4582B0DF64BEB1
+        F4C7DA9E27D2DF6BFC6D99F98D499AB1FA6F40B1ED8CD52341F8C1E4BF52DB37
+        B1499120C8E42F908905269327F1869120C86420DE301204990CC41B468290C7
+        87E3034C527214BC612408D5037264C2874CF890091F32E143267CC8840F99F0
+        21133E64C2874CF890091F32E143267CC8840F99F021133E64C2874CF890091F
+        32E143267CC8840F99F021133E9E32390ADE3012843C3E1C1F609292A3E00D23
+        4190C940BC612408321988378C04412603F18691209CD7A4FABA2478F815CD9F
+        C9CBB74C9B97363C83AD8C0461B089B13DEC31B62612040A93D7B6B5159120EC
+        35697DF710B5D60D77B675C1557D7EB38795D383FAD3670F2241186BD2589337
+        2E895786CC582D12849E498F3FFE37896D6DDC5AB714869B74D888943BE49571
+        D032E434F19F8447B362571B4782D033D9B6B3BD9A86496FE94CA7C7CDD7F8F3
+        A62DD84CF06C7E57D1325ECFDE1ED26699F23E93C6BC2CF784C94C2E958D37EE
+        A7C6A64482F05B933CB173CB99F6B6FE69F2CEFD36B62FF728165A211284BD26
+        A152F1BC49B149E5B262B5CC4A9120EC3649C40B38EC47174DBC6052361E77F4
+        E0952133568F04616B7200BC612408321988378C04412603F1869120C86420DE
+        3012843C3E1C1F609292A3E00D2341A81E9023133E64C2874CF890091F32E143
+        267CC8840F99F021133E64C2874CF890091F32E143267CC8840F99F021133E64
+        C2874CF890091F32E143267CC8840F99F0F194C951F0869120E4F1E138B5C971
+        81828513701693EFEF7F71C82488F33CD13B0000000049454E44AE426082
+      }
+    end
+    object Image5: TImage
+      Left = 512
+      Height = 37
+      Top = 152
+      Width = 39
+      Picture.Data = {
+        1754506F727461626C654E6574776F726B47726170686963C201000089504E47
+        0D0A1A0A0000000D4948445200000025000000210802000000D16DF542000000
+        017352474200AECE1CE90000000467414D410000B18F0BFC6105000000097048
+        597300000EC300000EC301C76FA8640000015749444154484BDD94D175833010
+        04A9969EDC538AA10332D29E85103A74109C0FCF5308E8AD7690B19996FFC5F5
+        BDC2D882187D1F2D3F31484ED3850FA913A5628D9176F7944F5D1E04B43978CC
+        4791C3077D6B6F7CD4B73632C657F93AE35B7CEE502088F5665CDF3964D85F04
+        92F507D0F759D621724382248C7DE9C1F910285D1E047467C012AB3EFA941822
+        9FF4471418FB941BA2988AE83E0E05A2BEF4881CB41E763E5E086F938602253F
+        F6E96796153B92A07A7EBA78C247E6D5F109C554D498344A4F3E3DF50579C607
+        A96284EAD4E5D1F8E679B67EFDEB429435A4595CC3BC9D9D52FBB8E484CE9B3E
+        E62348C611D479D3C76490ECB21E3A2FFBB4FE1265A374A63F2E74DCA3EF5A1A
+        E536C1B457D0C2CD875FC71A02396CBEF7A47DF13C545D5326379F9DED697C82
+        65F29DBF806A986C7D5D942E6872F3B1DC7F0135847C5DB4F206E58EAFF920EF
+        F632B6F886EF4F2CCB2F37451B1E7997D9E00000000049454E44AE426082
+      }
+    end
+    object CHB1: TCheckBox
+      Left = 48
+      Height = 29
+      Top = 8
+      Width = 113
+      Caption = 'COM On/Off'
+      Color = clWhite
+      OnChange = CHB1Change
+      ParentColor = False
+      TabOrder = 0
+    end
+    object CHB2: TCheckBox
+      Left = 496
+      Height = 29
+      Top = 184
+      Width = 65
+      Caption = 'Envia'
+      OnChange = CHB2Change
+      TabOrder = 5
+    end
+    object GroupBox2: TGroupBox
+      Left = 480
+      Height = 44
+      Top = -7
+      Width = 368
+      ClientHeight = 20
+      ClientWidth = 364
+      TabOrder = 1
+      object RadioButton1: TRadioButton
+        Left = 0
+        Height = 29
+        Top = -8
+        Width = 75
+        Caption = 'UMA 1'
+        DragCursor = crDefault
+        OnChange = RadioButton1Change
+        TabOrder = 0
+      end
+      object RadioButton2: TRadioButton
+        Left = 72
+        Height = 29
+        Top = -8
+        Width = 75
+        Caption = 'UMA 2'
+        OnChange = RadioButton2Change
+        TabOrder = 1
+      end
+      object RadioButton3: TRadioButton
+        Left = 144
+        Height = 29
+        Top = -8
+        Width = 75
+        Caption = 'UMA 3'
+        OnChange = RadioButton3Change
+        TabOrder = 2
+      end
+      object RadioButton4: TRadioButton
+        Left = 216
+        Height = 29
+        Top = -8
+        Width = 75
+        Caption = 'UMA 4'
+        OnChange = RadioButton4Change
+        TabOrder = 3
+      end
+      object RadioButton5: TRadioButton
+        Left = 288
+        Height = 29
+        Top = -8
+        Width = 75
+        Caption = 'UMA 5'
+        OnChange = RadioButton5Change
+        TabOrder = 4
+      end
+    end
+    object RB1: TRadioButton
+      Left = 496
+      Height = 29
+      Top = 72
+      Width = 72
+      Caption = 'MP 01'
+      OnChange = RB1Change
+      TabOrder = 2
+    end
+    object RB2: TRadioButton
+      Left = 496
+      Height = 29
+      Top = 96
+      Width = 72
+      Caption = 'MP 25'
+      OnChange = RB2Change
+      TabOrder = 3
+    end
+    object RB3: TRadioButton
+      Left = 496
+      Height = 29
+      Top = 120
+      Width = 72
+      Caption = 'MP 10'
+      OnChange = RB3Change
+      TabOrder = 4
+    end
+    object Chart1: TChart
+      Left = 80
+      Height = 192
+      Top = 72
+      Width = 400
+      AxisList = <      
+        item
+          Grid.Visible = False
+          Marks.LabelBrush.Style = bsClear
+          Minors = <>
+          Range.Max = 100
+          Range.UseMax = True
+          Range.UseMin = True
+          Title.LabelFont.Orientation = 900
+          Title.LabelBrush.Style = bsClear
+        end      
+        item
+          Grid.Visible = False
+          Alignment = calBottom
+          Marks.LabelBrush.Style = bsClear
+          Minors = <>
+          Range.Max = 10
+          Range.UseMax = True
+          Range.UseMin = True
+          Title.LabelBrush.Style = bsClear
+        end>
+      Title.Text.Strings = (
+        'TAChart'
+      )
+      OnBeforeDrawBackWall = Chart1BeforeDrawBackWall
+      object Serie1: TLineSeries
+        LinePen.Color = clRed
+        LinePen.Width = 2
+        Marks.Distance = 10
+        Marks.LabelFont.CharSet = ANSI_CHARSET
+        Marks.LabelFont.Color = clWhite
+        Marks.LabelFont.Height = -14
+        Marks.LabelFont.Pitch = fpVariable
+        Marks.LabelFont.Quality = fqDraft
+        Marks.Format = '%0:.9g'
+        Marks.LabelBrush.Color = clRed
+        Marks.LinkPen.Color = clMenuText
+        Marks.LinkPen.Width = 2
+        Marks.Style = smsValue
+        Pointer.Brush.Color = clDefault
+        Pointer.Pen.Color = clHotLight
+        Pointer.Pen.Width = 2
+        Pointer.VertSize = 2
+        Pointer.Visible = True
+        ShowPoints = True
+      end
+      object Serie2: TLineSeries
+        LinePen.Color = clGreen
+        LinePen.Width = 2
+        Marks.Distance = 10
+        Marks.LabelFont.CharSet = ANSI_CHARSET
+        Marks.LabelFont.Color = clWhite
+        Marks.LabelFont.Height = -14
+        Marks.LabelFont.Pitch = fpVariable
+        Marks.LabelFont.Quality = fqDraft
+        Marks.Format = '%0:.9g'
+        Marks.LabelBrush.Color = clGreen
+        Marks.LinkPen.Color = clMenuText
+        Marks.LinkPen.Width = 2
+        Marks.Style = smsValue
+        Pointer.Pen.Color = clInfoText
+        Pointer.Pen.Width = 2
+        Pointer.VertSize = 2
+        Pointer.Visible = True
+        ShowPoints = True
+      end
+      object Serie3: TLineSeries
+        LinePen.Color = clHighlight
+        LinePen.Width = 2
+        Marks.Distance = 10
+        Marks.LabelFont.CharSet = ANSI_CHARSET
+        Marks.LabelFont.Color = clWhite
+        Marks.LabelFont.Height = -14
+        Marks.LabelFont.Pitch = fpVariable
+        Marks.LabelFont.Quality = fqDraft
+        Marks.Format = '%0:.9g'
+        Marks.LabelBrush.Color = clHighlight
+        Marks.LinkPen.Color = clMenuText
+        Marks.LinkPen.Width = 2
+        Marks.Style = smsValue
+        Pointer.Pen.Color = clHotLight
+        Pointer.Pen.Width = 2
+        Pointer.VertSize = 2
+        Pointer.Visible = True
+        ShowPoints = True
+      end
+    end
+    object Chart2: TChart
+      Left = 568
+      Height = 197
+      Top = 72
+      Width = 264
+      AxisList = <      
+        item
+          Grid.Visible = False
+          Visible = False
+          Marks.LabelBrush.Style = bsClear
+          Minors = <>
+          Range.UseMin = True
+          Title.LabelFont.Orientation = 900
+          Title.LabelBrush.Style = bsClear
+        end      
+        item
+          Grid.Visible = False
+          Alignment = calBottom
+          Marks.LabelBrush.Style = bsClear
+          Minors = <>
+          Range.Max = 5
+          Range.UseMax = True
+          Range.UseMin = True
+          Title.LabelBrush.Style = bsClear
+        end>
+      Title.Text.Strings = (
+        'TAChart'
+      )
+      OnBeforeDrawBackWall = Chart2BeforeDrawBackWall
+      object Bar1: TBarSeries
+        BarBrush.Color = clRed
+        Marks.Distance = 10
+        Marks.LabelFont.CharSet = ANSI_CHARSET
+        Marks.LabelFont.Height = -14
+        Marks.LabelFont.Pitch = fpVariable
+        Marks.LabelFont.Quality = fqDraft
+        Marks.Format = '%0:.9g'
+        Marks.Frame.Color = clCaptionText
+        Marks.LinkPen.Color = clBackground
+        Marks.Style = smsValue
+      end
+    end
+    object Te: TLabel
+      Left = 18
+      Height = 54
+      Top = 95
+      Width = 41
+      Caption = 'Te'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clRed
+      Font.Height = -40
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+    object Hr: TLabel
+      Left = 18
+      Height = 54
+      Top = 176
+      Width = 47
+      Caption = 'Hr'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlue
+      Font.Height = -40
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+  end
+  object StatusBar1: TStatusBar
+    Left = 0
+    Height = 36
+    Top = 302
+    Width = 891
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    Panels = <    
+      item
+        Width = 280
+      end    
+      item
+        Width = 50
+      end>
+    ParentFont = False
+    SimplePanel = False
+  end
+  object MySerial: TLazSerial
+    Active = False
+    BaudRate = br__9600
+    DataBits = db8bits
+    Parity = pNone
+    FlowControl = fcNone
+    StopBits = sbOne
+    SynSer.Tag = 0
+    SynSer.Handle = -1
+    SynSer.RaiseExcept = False
+    SynSer.TestDSR = False
+    SynSer.TestCTS = False
+    SynSer.MaxLineLength = 0
+    SynSer.DeadlockTimeout = 30000
+    SynSer.LinuxLock = False
+    SynSer.ConvertLineEnd = False
+    SynSer.AtTimeout = 1000
+    SynSer.InterPacketTimeout = True
+    Device = 'COM2'
+    RcvLineCRLF = False
+    OnRxData = MySerialRxData
+    Left = 848
+    Top = 144
+  end
+  object Timer1: TTimer
+    OnTimer = Timer1Timer
+    Left = 32
+    Top = 296
+  end
+end
